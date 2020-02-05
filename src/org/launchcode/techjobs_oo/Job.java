@@ -64,23 +64,23 @@ public class Job {
 
         //Add Location to string
         if("".equals(job.getLocation().getValue())){
-            result += String.format("\nName:  Data not available.");
+            result += String.format("\nLocation:  Data not available.");
         }else{
-            result +=String.format("\nName:  %s",job.getLocation());
+            result +=String.format("\nLocation:  %s",job.getLocation());
         }
 
         //Add PositionType
         if("".equals(job.getPositionType().getValue())){
-            result += String.format("\nName:  Data not available.");
+            result += String.format("\nPosition Type:  Data not available.");
         }else{
-            result +=String.format("\nName:  %s",job.getPositionType());
+            result +=String.format("\nPosition Type:  %s",job.getPositionType());
         }
 
         //Add CoreCompetency
         if("".equals(job.getCoreCompetency().getValue())){
-            result += String.format("\nName:  Data not available.");
+            result += String.format("\nCore Competency:  Data not available.");
         }else{
-            result +=String.format("\nName:  %s\n",job.getCoreCompetency());
+            result +=String.format("\nCore Competency:  %s\n",job.getCoreCompetency());
         }
 
         //Returns formatted string
